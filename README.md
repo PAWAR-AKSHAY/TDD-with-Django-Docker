@@ -36,3 +36,6 @@ Recipe API Project
 
 * `docker-compose run --rm app sh -c "django-admin startproject app ."`
 * `docker-compose up`
+
+### Create App inside Project using Docker-Compose
+* `docker-compose run --rm app sh -c "python manage.py startapp core"`
