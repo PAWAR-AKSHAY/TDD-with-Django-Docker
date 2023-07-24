@@ -24,7 +24,7 @@ Recipe API Project
     * Install `flake8` package
     * Run it through Docker Compose
     * `docker-compose run --rm app sh -c "flake8"`
-    * It is recommend to solve linting error from bottom to top
+    * It is recommended to solve linting error from bottom to top
 * Testing
     * Django test suite
     * Setup test per Django app
@@ -39,3 +39,7 @@ Recipe API Project
 
 ### Create App inside Project using Docker-Compose
 * `docker-compose run --rm app sh -c "python manage.py startapp core"`
+
+### Custom Wait for db command
+* `docker-compose run --rm app sh -c "python manage.py wait_for_db"`
+* `docker-compose run --rm app sh -c "python manage.py wait_for_db && flake8"`
